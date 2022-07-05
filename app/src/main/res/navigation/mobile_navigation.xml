@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="ru.mirea.sukhov.mireaproject.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_calculator"
+        android:name="ru.mirea.sukhov.mireaproject.CalculateFragment"
+        android:label="calculator"
+        tools:layout="@layout/l_calculator" />
+
+    <fragment
+        android:id="@+id/nav_search"
+        android:name="ru.mirea.sukhov.mireaproject.WebViewFragment"
+        android:label="Search"
+        tools:layout="@layout/l_web_fragment" />
+
+    <fragment
+        android:id="@+id/nav_music"
+        android:name="ru.mirea.sukhov.mireaproject.MusicFragment"
+        android:label="Music"
+        tools:layout="@layout/l_music_fragment" />
+    <fragment
+        android:id="@+id/nav_sensors"
+        android:name="ru.mirea.sukhov.mireaproject.SensorFragment"
+        android:label="Music"
+        tools:layout="@layout/l_music_fragment" />
+    <fragment
+        android:id="@+id/nav_camera"
+        android:name="ru.mirea.sukhov.mireaproject.CameraFragment"
+        android:label="Music"
+        tools:layout="@layout/l_camera_fragment" />
+</navigation>
